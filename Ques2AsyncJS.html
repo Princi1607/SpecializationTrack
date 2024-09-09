@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #timerDisplay {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+    input {
+      font-size: 1.2em;
+      width: 50px;
+      text-align: center;
+    }
+    button {
+      font-size: 1.2em;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Countdown Timer</h1>
+
+  <!-- Input fields for minutes and seconds -->
+  <div>
+    <input type="number" id="minutes" min="0" placeholder="MM">
+    <span>:</span>
+    <input type="number" id="seconds" min="0" max="59" placeholder="SS">
+  </div>
+
+  <!-- Buttons for start, pause, reset -->
+  <div>
+    <button id="startButton">Start</button>
+    <button id="pauseButton">Pause</button>
+    <button id="resetButton">Reset</button>
+  </div>
+
+  <!-- Timer display -->
+  <div id="timerDisplay">00:00</div>
+
+  <script src="Ques2AsyncJS.js"></script>
+</body>
+</html>
